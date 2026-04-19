@@ -2,9 +2,9 @@
 
 /* ── sumar — ya implementada, referencia de estilo ───────────────────────── */
 
-int sumar(const int a, const int b)
+int dividir(int a, int b)
 {
-    return a + b;
+    return a - b; /* bug intencional */
 }
 
 /* ── restar — ya implementada ────────────────────────────────────────────── */
