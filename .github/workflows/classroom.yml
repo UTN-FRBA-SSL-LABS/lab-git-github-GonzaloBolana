@@ -2,7 +2,7 @@ name: GitHub Classroom Workflow
 
 on:
   push:
-    branches: [ "**" ]
+    branches: ["**"]
     paths:
       - "operaciones.c"
       - "readme.md"
@@ -51,7 +51,7 @@ jobs:
         id: c4
         continue-on-error: true
         run: |
-          git log --all --format='%s' | grep -qF 'wip: experimento roto'
+          git log --all --format='%s' | grep -qF 'wip: Experimento roto'
 
       - name: "C5. Revert del experimento existe"
         id: c5
@@ -176,15 +176,15 @@ jobs:
       - name: Calcular puntaje
         if: always()
         env:
-          O_C1:  ${{ steps.c1.outcome }}
-          O_C2:  ${{ steps.c2.outcome }}
-          O_C3:  ${{ steps.c3.outcome }}
-          O_C4:  ${{ steps.c4.outcome }}
-          O_C5:  ${{ steps.c5.outcome }}
-          O_C6:  ${{ steps.c6.outcome }}
-          O_C7:  ${{ steps.c7.outcome }}
-          O_C8:  ${{ steps.c8.outcome }}
-          O_C9:  ${{ steps.c9.outcome }}
+          O_C1: ${{ steps.c1.outcome }}
+          O_C2: ${{ steps.c2.outcome }}
+          O_C3: ${{ steps.c3.outcome }}
+          O_C4: ${{ steps.c4.outcome }}
+          O_C5: ${{ steps.c5.outcome }}
+          O_C6: ${{ steps.c6.outcome }}
+          O_C7: ${{ steps.c7.outcome }}
+          O_C8: ${{ steps.c8.outcome }}
+          O_C9: ${{ steps.c9.outcome }}
           O_C10: ${{ steps.c10.outcome }}
           O_C11: ${{ steps.c11.outcome }}
           O_C12: ${{ steps.c12.outcome }}
